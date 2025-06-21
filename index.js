@@ -91,7 +91,14 @@ const storage=multer.diskStorage({
 
 const upload=multer({storage});
 
+
+
 //routes
+
+app.get("/", (req, res) => {
+  res.send("StayFinder backend is running successfully!");
+});
+
 
 //register
 app.post("/api/register",async(req,res)=>{
