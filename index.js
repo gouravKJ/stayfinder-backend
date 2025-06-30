@@ -17,7 +17,7 @@ app.use("/uploads",express.static(path.join(__dirname,"uploads")));
 
 //mongodb coonection
 
-const mongoose = require('mongoose');
+
 
 const MONGO_URI = process.env.MONGO_URI;
 
